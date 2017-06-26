@@ -12,6 +12,7 @@
 		F038BD1B1F00A3D300C90400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F038BD191F00A3D200C90400 /* Main.storyboard */; };
 		F038BD1D1F00A3D300C90400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F038BD1C1F00A3D300C90400 /* Assets.xcassets */; };
 		F038BD201F00A3D300C90400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F038BD1E1F00A3D300C90400 /* LaunchScreen.storyboard */; };
+		F07120791F00B36E00B8C26F /* coramdeo.png in Resources */ = {isa = PBXBuildFile; fileRef = F07120781F00B36E00B8C26F /* coramdeo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		F038BD1C1F00A3D300C90400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F038BD1F1F00A3D300C90400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F038BD211F00A3D300C90400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07120781F00B36E00B8C26F /* coramdeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coramdeo.png; sourceTree = "<group>"; };
+		F071207B1F00C8E300B8C26F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		F038BD141F00A3D200C90400 /* ecoramdeo */ = {
 			isa = PBXGroup;
 			children = (
+				F071207B1F00C8E300B8C26F /* Roboto-Bold.ttf */,
+				F07120781F00B36E00B8C26F /* coramdeo.png */,
 				F038BD151F00A3D200C90400 /* AppDelegate.swift */,
 				F038BD171F00A3D200C90400 /* ViewController.swift */,
 				F038BD191F00A3D200C90400 /* Main.storyboard */,
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F038BD201F00A3D300C90400 /* LaunchScreen.storyboard in Resources */,
+				F07120791F00B36E00B8C26F /* coramdeo.png in Resources */,
 				F038BD1D1F00A3D300C90400 /* Assets.xcassets in Resources */,
 				F038BD1B1F00A3D300C90400 /* Main.storyboard in Resources */,
 			);
