@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F038BD121F00A3D200C90400 /* ecoramdeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecoramdeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F038BD121F00A3D200C90400 /* Coramdeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coramdeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F038BD151F00A3D200C90400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F038BD171F00A3D200C90400 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F038BD1A1F00A3D200C90400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		F038BD131F00A3D200C90400 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F038BD121F00A3D200C90400 /* ecoramdeo.app */,
+				F038BD121F00A3D200C90400 /* Coramdeo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +86,7 @@
 			);
 			name = ecoramdeo;
 			productName = ecoramdeo;
-			productReference = F038BD121F00A3D200C90400 /* ecoramdeo.app */;
+			productReference = F038BD121F00A3D200C90400 /* Coramdeo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -274,7 +274,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecoramdeo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Coramdeo;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -288,7 +288,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ecoramdeo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Coramdeo;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

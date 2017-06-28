@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
     
     func webViewDidFinishLoad(_ webView: UIWebView) {
         self.view.backgroundColor = UIColor(red:0.20, green:0.24, blue:0.27, alpha:1.0)
+        indicator.stopAnimating()
     }
 }
 

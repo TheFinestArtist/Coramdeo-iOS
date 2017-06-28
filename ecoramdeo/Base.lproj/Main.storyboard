@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ecoramdeo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coramdeo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,19 +32,25 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-ky-XFX">
+                                <rect key="frame" x="178" y="324" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="H5Y-vk-b4X" secondAttribute="trailing" id="5e0-xI-Okp"/>
                             <constraint firstItem="Hhe-LN-6FV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8v6-JU-mfI"/>
+                            <constraint firstItem="TdQ-ky-XFX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IKM-7N-unA"/>
                             <constraint firstItem="H5Y-vk-b4X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="LcI-5w-NA0"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H5Y-vk-b4X" secondAttribute="bottom" id="fMn-Wm-MeW"/>
+                            <constraint firstItem="TdQ-ky-XFX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gsG-VA-XvM"/>
                             <constraint firstItem="Hhe-LN-6FV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="puV-v5-JZ1"/>
                             <constraint firstAttribute="trailing" secondItem="Hhe-LN-6FV" secondAttribute="trailing" id="thS-Cs-vM4"/>
                             <constraint firstItem="H5Y-vk-b4X" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zmb-cs-J7z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="indicator" destination="TdQ-ky-XFX" id="18Q-dC-Q0b"/>
                         <outlet property="webView" destination="H5Y-vk-b4X" id="oKh-ug-5gM"/>
                     </connections>
                 </viewController>
