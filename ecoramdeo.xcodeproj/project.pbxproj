@@ -8,19 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		328D7EB690469EB96163FE1F /* Pods_ecoramdeo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC648DD3175F8AC054B1BAFA /* Pods_ecoramdeo.framework */; };
+		A7A521B01F4A8DC600CFD1B6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A521AF1F4A8DC600CFD1B6 /* AdSupport.framework */; };
+		A7A521B41F4BC64700CFD1B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7A521B31F4BC64700CFD1B6 /* GoogleService-Info.plist */; };
 		F038BD161F00A3D200C90400 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038BD151F00A3D200C90400 /* AppDelegate.swift */; };
 		F038BD181F00A3D200C90400 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F038BD171F00A3D200C90400 /* ViewController.swift */; };
 		F038BD1B1F00A3D300C90400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F038BD191F00A3D200C90400 /* Main.storyboard */; };
 		F038BD1D1F00A3D300C90400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F038BD1C1F00A3D300C90400 /* Assets.xcassets */; };
 		F038BD201F00A3D300C90400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F038BD1E1F00A3D300C90400 /* LaunchScreen.storyboard */; };
 		F07120791F00B36E00B8C26F /* coramdeo.png in Resources */ = {isa = PBXBuildFile; fileRef = F07120781F00B36E00B8C26F /* coramdeo.png */; };
-		F0C7764F1F0361F2008E3CE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0C7764E1F0361F2008E3CE8 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AC8C641FFB3D4C609A35BCE /* Pods-ecoramdeo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoramdeo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ecoramdeo/Pods-ecoramdeo.release.xcconfig"; sourceTree = "<group>"; };
 		651E04E9EEE3A269234F5421 /* Pods-ecoramdeo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecoramdeo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ecoramdeo/Pods-ecoramdeo.debug.xcconfig"; sourceTree = "<group>"; };
 		A73CBECE1F4A0BF600A3D60B /* Coramdeo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Coramdeo.entitlements; sourceTree = "<group>"; };
+		A7A521AF1F4A8DC600CFD1B6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A7A521B31F4BC64700CFD1B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC648DD3175F8AC054B1BAFA /* Pods_ecoramdeo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecoramdeo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F038BD121F00A3D200C90400 /* Coramdeo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coramdeo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F038BD151F00A3D200C90400 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +34,6 @@
 		F038BD211F00A3D300C90400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F07120781F00B36E00B8C26F /* coramdeo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coramdeo.png; sourceTree = "<group>"; };
 		F071207B1F00C8E300B8C26F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
-		F0C7764E1F0361F2008E3CE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A521B01F4A8DC600CFD1B6 /* AdSupport.framework in Frameworks */,
 				328D7EB690469EB96163FE1F /* Pods_ecoramdeo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 		E54BD99E50996401DB9985E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7A521AF1F4A8DC600CFD1B6 /* AdSupport.framework */,
 				CC648DD3175F8AC054B1BAFA /* Pods_ecoramdeo.framework */,
 			);
 			name = Frameworks;
@@ -92,8 +96,8 @@
 				F038BD191F00A3D200C90400 /* Main.storyboard */,
 				F038BD1C1F00A3D300C90400 /* Assets.xcassets */,
 				F038BD1E1F00A3D300C90400 /* LaunchScreen.storyboard */,
+				A7A521B31F4BC64700CFD1B6 /* GoogleService-Info.plist */,
 				F038BD211F00A3D300C90400 /* Info.plist */,
-				F0C7764E1F0361F2008E3CE8 /* GoogleService-Info.plist */,
 			);
 			path = ecoramdeo;
 			sourceTree = "<group>";
@@ -168,7 +172,7 @@
 			files = (
 				F038BD201F00A3D300C90400 /* LaunchScreen.storyboard in Resources */,
 				F07120791F00B36E00B8C26F /* coramdeo.png in Resources */,
-				F0C7764F1F0361F2008E3CE8 /* GoogleService-Info.plist in Resources */,
+				A7A521B41F4BC64700CFD1B6 /* GoogleService-Info.plist in Resources */,
 				F038BD1D1F00A3D300C90400 /* Assets.xcassets in Resources */,
 				F038BD1B1F00A3D300C90400 /* Main.storyboard in Resources */,
 			);

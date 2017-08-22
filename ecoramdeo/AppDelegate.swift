@@ -5,10 +5,8 @@
 //  Created by Wonhee David Lee on 6/26/17.
 //  Copyright © 2017 Coramdeo. All rights reserved.
 //
-
 import UIKit
 import UserNotifications
-
 import Firebase
 
 @UIApplicationMain
@@ -17,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let gcmMessageIDKey = "gcm.message_id"
     
-    func application(_ application: UIApplication,
-                     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Use Firebase library to configure APIs
         FirebaseApp.configure()
         
         // [START set_messaging_delegate]
         Messaging.messaging().delegate = self
         // [END set_messaging_delegate]
+        
         // Register for remote notifications. This shows a permission dialog on first run, to
         // show the dialog at a more appropriate time move this registration accordingly.
         // [START register_for_notifications]
@@ -43,8 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         application.registerForRemoteNotifications()
-        
         // [END register_for_notifications]
+        
         return true
     }
     
@@ -62,6 +60,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Print full message.
         print(userInfo)
+        
+        if (application.applicationState == UIApplicationState.active) {
+            // Nothing to do if applicationState is Inactive, the iOS already displayed an alert view.
+            let message = (userInfo["aps"] as? NSDictionary)?["alert"] as? String
+            let alert = UIAlertController(title: "Coramdeo", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            window?.rootViewController?.present(alert, animated:true, completion:nil)
+        }
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
@@ -80,6 +86,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(userInfo)
         
         completionHandler(UIBackgroundFetchResult.newData)
+        
+        if (application.applicationState == UIApplicationState.active) {
+            // Nothing to do if applicationState is Inactive, the iOS already displayed an alert view.
+            let message = (userInfo["aps"] as? NSDictionary)?["alert"] as? String
+            let alert = UIAlertController(title: "Coramdeo", message: message, preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            window?.rootViewController?.present(alert, animated:true, completion:nil)
+        }
     }
     // [END receive_message]
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
@@ -119,6 +133,12 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         
         // Change this to your preferred presentation option
         completionHandler([])
+        
+        // Nothing to do if applicationState is Inactive, the iOS already displayed an alert view.
+        let message = (userInfo["aps"] as? NSDictionary)?["alert"] as? String
+        let alert = UIAlertController(title: "Coramdeo", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        window?.rootViewController?.present(alert, animated:true, completion:nil)
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter,
@@ -134,9 +154,16 @@ extension AppDelegate : UNUserNotificationCenterDelegate {
         print(userInfo)
         
         completionHandler()
+        
+        // Nothing to do if applicationState is Inactive, the iOS already displayed an alert view.
+        let message = (userInfo["aps"] as? NSDictionary)?["alert"] as? String
+        let alert = UIAlertController(title: "Coramdeo", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        window?.rootViewController?.present(alert, animated:true, completion:nil)
     }
 }
 // [END ios_10_message_handling]
+
 
 extension AppDelegate : MessagingDelegate {
     // [START refresh_token]
